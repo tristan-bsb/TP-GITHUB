@@ -1,4 +1,4 @@
-# Rendu de <NOM Prénom>
+# Rendu de <ANTHONY>
 
 Une capture par étape, dans l'ordre. Terminal entier non rogné, invite visible.
 Afficher l'historique en graphe quand c'est pertinent.
@@ -32,6 +32,6 @@ Afficher l'historique en graphe quand c'est pertinent.
 (capture)
 
 ## Trois commits annotés
-1. <hash> :
-2. <hash> :
+1. <hash> : 6024155
+2. <hash> :  bb41542
 3. <hash> :
