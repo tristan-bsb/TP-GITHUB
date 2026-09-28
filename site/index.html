@@ -2,14 +2,110 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Mon site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atelier Fareno - TP GitHub</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Bienvenue</h1>
-    <p>Un petit site servi par nginx.</p>
-    <p>Ce projet sert de support au TP Git.</p>
-    <p>Modifie-le au fil des etapes.</p>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="index.html">Atelier Fareno</a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#apropos">A propos</a>
+          <a href="#parcours">Parcours</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">TP GitHub - Niveau 1</p>
+            <h1>Un site simple, versionne, et pret pour la revue.</h1>
+            <p class="lead">
+              Page d accueil revue pour le fork de Raphael Angoula.
+              Servie par nginx, amelioree sur une branche feature, puis proposee en Pull Request.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="#parcours">Voir le parcours</a>
+              <a class="btn ghost" href="#contact">Me contacter</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Etat du depot">
+            <p class="card-label">Depot</p>
+            <ul class="meta">
+              <li><span>Branche</span> feature/fareno-feature</li>
+              <li><span>Remote</span> origin (fork)</li>
+              <li><span>Upstream</span> tristan-bsb/TP-GITHUB</li>
+              <li><span>CI</span> titre + nginx -t</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="apropos" class="section">
+        <div class="wrap">
+          <h2>A propos</h2>
+          <p class="intro">
+            Ce projet est le support du TP Git. L objectif n est pas seulement
+            d afficher une page : c est de pratiquer un vrai flux d equipe,
+            de la branche jusqu au merge.
+          </p>
+          <div class="cards">
+            <article class="card">
+              <h3>Clair</h3>
+              <p>Titre, navigation et sections lisibles sur telephone comme sur bureau.</p>
+            </article>
+            <article class="card">
+              <h3>Atomic</h3>
+              <p>Chaque commit a un role : contenu, style, ou documentation.</p>
+            </article>
+            <article class="card">
+              <h3>Revu</h3>
+              <p>La Pull Request sert a expliquer le changement avant d integrer.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="parcours" class="section alt">
+        <div class="wrap">
+          <h2>Parcours Git</h2>
+          <ol class="steps">
+            <li>
+              <strong>Fork et clone</strong>
+              <span>Le depot d origine reste en upstream, le travail part du fork.</span>
+            </li>
+            <li>
+              <strong>Branche feature</strong>
+              <span>Les commits restent isoles de main jusqu a la revue.</span>
+            </li>
+            <li>
+              <strong>Pull Request</strong>
+              <span>CI au vert, commentaire du binome, puis merge.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap contact">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Raphael Angoula - fork
+              <a href="https://github.com/angoularaphael/TP-GITHUB">angoularaphael/TP-GITHUB</a>
+            </p>
+          </div>
+          <a class="btn primary" href="https://github.com/angoularaphael/TP-GITHUB">Ouvrir le depot</a>
+        </div>
+      </section>
+    </main>
+
     <footer>PROMO -70% !!! CLIQUEZ VITE</footer>
   </body>
 </html>
