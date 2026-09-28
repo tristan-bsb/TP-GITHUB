@@ -3,7 +3,7 @@
 Une capture par étape, dans l'ordre. Terminal entier non rogné, invite visible.
 Afficher l'historique en graphe quand c'est pertinent.
 
-## Niveau 1
+## Niveau 1 a
 1. Configuration Git
 (capture)
 2. Branche de travail
