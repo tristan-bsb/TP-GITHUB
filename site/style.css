@@ -1,2 +1,49 @@
 body { font-family: system-ui, sans-serif; margin: 2rem; }
 h1 { color: #4E5EA3; }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  margin-bottom: 16px;
+  padding: 10px 18px;
+  border: 2px solid #4E5EA3;
+  border-radius: 50px;
+  background: transparent;
+  color: #4E5EA3;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid #4E5EA3;
+  outline-offset: 3px;
+}
+
+html.theme-dark body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+html.theme-dark h1,
+html.theme-dark .theme-toggle {
+  color: #c7d2fe;
+}
+
+html.theme-dark .theme-toggle {
+  border-color: #c7d2fe;
+}
+
+html.theme-dark .theme-toggle:focus-visible {
+  outline-color: #c7d2fe;
+}
+
+@media (max-width: 650px) {
+  .theme-toggle {
+    width: 100%;
+  }
+}
